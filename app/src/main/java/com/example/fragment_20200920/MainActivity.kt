@@ -2,6 +2,7 @@ package com.example.fragment_20200920
 
 import android.os.Bundle
 
+
 class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

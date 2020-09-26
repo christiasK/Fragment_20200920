@@ -7,11 +7,19 @@
     android:background="#FF0000">
 
     <TextView
+        android:id="@+id/firstText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:text="첫 번째 플래그 먼트"
         android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/changeTextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="텍스트 변경하기"
+        />
 
 </LinearLayout>

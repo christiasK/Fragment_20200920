@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:overScrollMode="ifContentScrolls"
     tools:context=".MainActivity">
 
     <fragment
@@ -13,10 +14,25 @@
         android:layout_height="250dp"
         class="com.example.fragment_20200920.fragments.FirstFragment"/>
 
-    <fragment
-        android:tag="mySecondFragment"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        class="com.example.fragment_20200920.fragments.SecondFragment"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <fragment
+                android:tag="mySecondFragment"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                class="com.example.fragment_20200920.fragments.SecondFragment"/>
+
+            <fragment
+                android:tag="myFirstFragment2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                class="com.example.fragment_20200920.fragments.FirstFragment"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
